@@ -1,0 +1,88 @@
+:root {
+  font-family: 'Special Elite', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  --gh-blur: 0.4
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  min-width: 320px;
+  height: 100dvh;
+}
+
+main {
+  margin: auto;
+}
+
+@media (min-width: 480px) {
+  canvas {
+    border: 12px solid var(--sl-color-gray-50);
+    -webkit-box-shadow:
+    0 11px 15px -7px rgba(0,0,0,var(--gh-blur)),
+    0 24px 38px 3px rgba(0,0,0,var(--gh-blur)),
+    0 9px 46px 8px rgba(0,0,0,var(--gh-blur));
+    box-shadow:
+    0 11px 15px -7px rgba(0,0,0,var(--gh-blur)),
+    0 24px 38px 3px rgba(0,0,0,var(--gh-blur)),
+    0 9px 46px 8px rgba(0,0,0,var(--gh-blur));
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background: var(--sl-color-neutral-0);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
+
+.sketch-container {
+  position: absolute;
+  top: -9px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100dvw;
+  height: 800px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sketch-card {
+  position: relative;
+  top: -48px;
+}
+
