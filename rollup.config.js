@@ -71,7 +71,8 @@ export default {
     /** Copy static assets */
     copy({
       targets: [
-        { src: 'assets/*', dest: 'dist/assets' }
+        { src: 'assets/*', dest: 'dist/assets' },
+        { src: '_redirects', dest: 'dist' },
       ]
     })
   ],
